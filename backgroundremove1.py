@@ -4,7 +4,7 @@ import cv2
 
 cap = cv2.VideoCapture(0) #Change 0 to 1 if using secondary webcam
  
-fgbg = cv2.BackgroundSubtractorMOG2()
+fgbg = cv2.BackgroundSubtractorMOG() #replace MOG with MOG2 if doesn't work properly
 
 while(1):
      ret, frame = cap.read()
